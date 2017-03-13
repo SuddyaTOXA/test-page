@@ -155,13 +155,13 @@ button {
         height: 0;
     }
     .navigation-bar > .container:before {
-        border-bottom: 30px solid #fff;
+        border-bottom: 32px solid #fff;
         border-left: 0 solid transparent;
         border-right: 30px solid transparent;
         left: -2120px;
     }
     .navigation-bar > .container:after {
-        border-bottom: 30px solid #fff;
+        border-bottom: 32px solid #fff;
         border-left: 30px solid transparent;
         border-right: 0 solid transparent;
         right: -2120px;
@@ -373,6 +373,7 @@ button {
                     border: 1px solid #82001c;
                     box-shadow: none;
                     font: 18px/24px 'AvenirLTStd-Light', Arial, sans-serif;
+                    height: 36px;
                     letter-spacing: 0.02em;
                     color: #82001c;
                     padding: 5px 12px;
@@ -387,12 +388,12 @@ button {
                 .search-box .icon {
                     position: absolute;
                     display: none;
-                    height: 34px;
+                    height: 33px;
                     width: 45px;
                     top: 50%;
                     right: 0;
                     margin-right: 1px;
-                    margin-top: -24px;
+                    margin-top: -23px;
                     z-index: 1;
                     color: #82001c;
                     cursor: pointer;
