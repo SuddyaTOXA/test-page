@@ -262,15 +262,16 @@ img {
             display: inline-block;
             margin-top: 14px;
             margin-bottom: -25px;
-            padding-right: 67px;
+            padding-right: 60px;
         }
             .header-filter-list > li {
                 display: inline-block;
+                width: 156px;
                 margin-bottom: 25px;
-                padding: 0 27px;
+                padding: 0 7px;
             }
             .header-filter-list > li:last-child {
-                margin-left: -4px;
+                padding-left: 33px;
             }
                 .select-wrap {
                     text-align: left;
@@ -286,6 +287,7 @@ img {
                     }
                     .nice-select {
                         float: none;
+                        display: inline-block;
                         border: none;
                         height: 28px;
                         line-height: 28px;
@@ -296,6 +298,12 @@ img {
                             letter-spacing: 0.5px;
                             text-transform: uppercase;
                             color: #82001c;
+                        }
+                        .current {
+                            overflow: hidden;
+                            display: block;
+                            max-width: 105px;
+                            text-overflow: ellipsis;
                         }
                             .nice-select .option {
                                 font: 18px/40px 'AvenirLTStd-Light', Arial, sans-serif;
@@ -351,6 +359,12 @@ img {
                                 -moz-osx-font-smoothing: grayscale;
                                 color: #82001c;
                             }
+        .search-wrap {
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+        }
             .search-box {
                 display: none;
                 padding-bottom: 13px;
@@ -632,7 +646,7 @@ img {
 }
 .section-catalog {}
     .section-title {
-        margin-bottom: 20px;
+        margin-bottom: 19px;
         font: 400 51px 'Oswald', Arial, sans-serif;
     }
     .container-box {
@@ -652,7 +666,10 @@ img {
                 height: 190px;
                 border: 1px solid #d4d4d4;
             }
-            .item-box a{
+            .item-box a {
+                color: #464646;
+            }
+            .item-box a.btn-view {
                 /*position: absolute;*/
                 /*left: 0;*/
                 /*top: 0;*/
@@ -662,7 +679,7 @@ img {
                 visibility: hidden;
                 transition: opacity 0.2s, visibility 0s linear 0.2s;
             }
-            .item-box:hover a {
+            .item-box:hover a.btn-view {
                 opacity: 1;
                 visibility: visible;
                 transition-delay: 0.2s;

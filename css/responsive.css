@@ -38,7 +38,7 @@
         width: 25%;
     }
     .item-box {
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -148,6 +148,9 @@
         width: 290px;
         height: 350px;
     }
+    .item-box a.btn-view {
+        display: none;
+    }
         .item-wrap-img{
             height: 260px;
             line-height: 260px;
@@ -171,6 +174,93 @@
     .nice-select .option {
         font-size: 26px;
     }
+    .header-filter-list > li {
+        width: 185px;
+    }
+    .current {
+        max-width: 120px;
+    }
+    .header-filter-list {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 860px) {
+
+}
+
+@media all and (max-width: 790px) {
+
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 767px) {
+
+}
+
+@media (max-width: 767px) and (max-height: 480px) {
+
+}
+@media all and (max-width: 736px) {
+
+}
+@media all and (max-width: 680px) {
+
+}
+
+@media all and (max-width: 645px) {
+    .catalog-list > li {
+        width: 50%;
+    }
+    .item-box {
+        width: auto;
+    }
+    .header-filter-list > li {
+        margin-left: -22px;
+        width: 160px;
+    }
+    .select-desc {
+        font-size: 12px;
+    }
+    .nice-select .current, .search-title {
+        font-size: 20px;
+    }
+    .current {
+        max-width: 100px;
+    }
+    .nice-select:after {
+        margin-top: -10px;
+        right: 5px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 13px solid #fff;
+    }
+    .search-title:after {
+        right: 5px;
+        margin-top: -9px;
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+}
+
+@media all and (max-width: 580px) {
+    .item-title {
+        font-size: 25px;
+    }
+    .item-desc {
+        height: 70px;
+        padding: 0 10px 8px;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -179,7 +269,36 @@
         display: block;
         margin: 15px auto -25px;
     }
-    .header-filter-list > li:last-child {
-        margin-left: 0;
+    .header-filter-list > li {
+        width: 100%;
     }
+    .header-filter-list > li:last-child {
+        padding-left: 8px;
+    }
+        .current {
+            max-width: 100%;
+        }
+}
+
+@media all and (max-width: 430px) {
+    .item-title {
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 420px) {
+    .catalog-list > li {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 380px) {
+
+}
+
+@media all and (max-width: 360px) {
+
+}
+
+@media all and (max-width: 350px) {
+
 }
