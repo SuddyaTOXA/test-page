@@ -37,13 +37,13 @@ jQuery(document).ready(function($) {
     //for search box
     $('.search-title').on('click', function () {
         if (($(this).hasClass('open'))) {
-            $(".icon").fadeOut(350, function () {
-                $('.search-box').slideUp(500);
+            $(".icon").fadeOut(250, function () {
+                $('.search-box').slideUp(350);
             });
             $('.search-title').removeClass('open');
         } else {
-            $('.search-box').slideDown(500, function(){
-                $(".icon").fadeIn(350);
+            $('.search-box').slideDown(350, function(){
+                $(".icon").fadeIn(250);
             });
             $('.search-title').addClass('open');
         }
