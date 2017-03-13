@@ -635,6 +635,7 @@ img {
         overflow: hidden;
     }
         .catalog-list {
+            margin-right: 4px;
             font-size: 0;
             border: 1px solid #d4d4d4
         }
@@ -693,7 +694,8 @@ img {
                 }
                     .item-title {
                         display: inline-block;
-                        font: 13px/1.4 'AvenirLTStd-Heavy', Arial, sans-serif;
+                        font: 13px/1.3 'AvenirLTStd-Heavy', Arial, sans-serif;
+                        letter-spacing: 0.2px;
                     }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
