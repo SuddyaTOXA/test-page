@@ -84,7 +84,7 @@
                         <li>
                             <div class="select-wrap">
                                 <span class="select-desc">Find by</span>
-                                <select>
+                                <select name="brand">
                                     <option data-display="Brand">Nothing</option>
                                     <option value="1">Brand 1</option>
                                     <option value="2">Brand 2 Brand 2</option>
@@ -96,7 +96,7 @@
                         <li>
                             <div class="select-wrap">
                                 <span class="select-desc">Find by</span>
-                                <select>
+                                <select name="type">
                                     <option data-display="Part type">Nothing</option>
                                     <option value="1">Part type 1</option>
                                     <option value="2">Part typPart type 2</option>
@@ -115,13 +115,13 @@
             </div>
             <div class="search-wrap">
                 <div class="container">
-                <div class="search-box">
-                    <form>
-                        <button  type="submit" class="icon"><i class="fa fa-search"></i></button>
-                        <input type="search" name="s" class="input-style search-style" value="">
-                    </form>
+                    <div class="search-box">
+                        <form action="#" method="get">
+                            <button type="submit" class="icon"><i class="fa fa-search"></i></button>
+                            <input type="search" name="s" autocomplete class="input-style search-style" value="">
+                        </form>
+                    </div>
                 </div>
-            </div>
             </div>
         </header>
 
