@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 
-
     // for header-fixed padding
     $(window).on('load resize', function() {
         var mobHeader = $('.mobile-header-box'),
@@ -8,11 +7,14 @@ jQuery(document).ready(function($) {
         if (width > '991') {
             setTimeout(function() {
                 $(document.body).children('.wrapper').css('padding-top', 0);
+                console.log('------------------------------------------');
+                console.log('width > '+ width +' no padding!!!');
             }, 10);
         } else if (width < '992'){
             setTimeout(function() {
                 var headerHeight = mobHeader.outerHeight();
-                console.log(headerHeight);
+                console.log('------------------------------------------');
+                console.log('width < '+ width +' padding-top: '+ headerHeight);
                 $(document.body).children('.wrapper').css('padding-top', headerHeight);
             }, 10);
         }
