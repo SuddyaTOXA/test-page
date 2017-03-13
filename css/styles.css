@@ -135,10 +135,18 @@ img {
     width: 100%;
     min-height: 100px;
     background-color: #fff;
+    opacity: 0;
     -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.header.show {
+    opacity: 1;
 }
     .navigation-bar {
         overflow: hidden;
@@ -333,7 +341,7 @@ img {
                             }
             .search-box {
                 display: none;
-                margin-bottom: 13px;
+                padding-bottom: 13px;
                 vertical-align: middle;
                 white-space: nowrap;
                 position: relative;
@@ -363,7 +371,7 @@ img {
                     top: 50%;
                     right: 0;
                     margin-right: 1px;
-                    margin-top: -17px;
+                    margin-top: -24px;
                     z-index: 1;
                     color: #82001c;
                     cursor: pointer;
@@ -401,11 +409,14 @@ img {
     right: 0;
     height: 0;
     width: 0;
-    top: 75px;
+    top: 100px;
     -webkit-transition-delay: 0.35s;
     -moz-transition-delay: 0.35s;
     -o-transition-delay: 0.35s;
     transition-delay: 0.35s;
+}
+.header.scrolling .mobile-menu-wrap {
+    top: 75px;
 }
 .admin-bar .mobile-menu-wrap {
     top: 108px; }

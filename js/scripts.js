@@ -9,6 +9,14 @@ jQuery(document).ready(function($) {
         }, 10);
     });
 
+    // header fade
+    $(function() {
+        var header = $('#header');
+        setTimeout(function(){
+            header.addClass('show');
+        },800);
+    });
+
     // for header scrolling class
     $(window).on('load scroll resize', function() {
         var st2 = $(this).scrollTop();
