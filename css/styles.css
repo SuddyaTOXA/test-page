@@ -142,6 +142,7 @@ img {
     /*-moz-transition: all 0.5s ease;*/
     /*-o-transition: all 0.5s ease;*/
     /*transition: all 0.5s ease;*/
+    border-bottom: 1px solid #c2c2c2;
 }
     .navigation-bar {
         overflow: hidden;
@@ -582,10 +583,6 @@ img {
     }
 
 /*----------------------------------------------------------------------------------*/
-/*--------------------------------------NAV-----------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
@@ -604,11 +601,6 @@ img {
     font-family: 'AvenirLTStd-Light', Arial, sans-serif;
     color: #464646;
 }
-.breadcrumbs a:hover,
-.breadcrumbs a:hover span{
-    color: #fff;
-    text-decoration: none;
-}
 .breadcrumbs a span{
     color: #464646;
 }
@@ -620,6 +612,15 @@ img {
 }
 .breadcrumbs span {
     color: #464646;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:hover span{
+    color: #fff;
+    text-decoration: none;
 }
 
 /*-------------------------------------CATALOG--------------------------------------*/
@@ -682,6 +683,8 @@ img {
                     .item-wrap-img img {
                         max-width: 100%;
                         max-height: 100%;
+                        height: auto;
+                        width: auto;
                         vertical-align: middle;
                     }
                 .item-desc {

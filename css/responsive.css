@@ -33,6 +33,7 @@
     }
     .header {
         position: relative;
+        border-bottom: none;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         -o-box-shadow: none;
@@ -126,6 +127,7 @@
         float: none;
         display: inline-block;
         width: auto;
+        vertical-align: top;
     }
     .item-box {
         width: 290px;

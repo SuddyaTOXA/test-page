@@ -7,14 +7,10 @@ jQuery(document).ready(function($) {
         if (width > '991') {
             setTimeout(function() {
                 $(document.body).children('.wrapper').css('padding-top', 0);
-                console.log('------------------------------------------');
-                console.log('width > '+ width +' no padding!!!');
             }, 10);
         } else if (width < '992'){
             setTimeout(function() {
                 var headerHeight = mobHeader.outerHeight();
-                console.log('------------------------------------------');
-                console.log('width < '+ width +' padding-top: '+ headerHeight);
                 $(document.body).children('.wrapper').css('padding-top', headerHeight);
             }, 10);
         }
@@ -70,8 +66,9 @@ jQuery(document).ready(function($) {
                 length = itemDescText.length;
             id++;
             if(length > size){
-                itemDesc.text(itemDescText.substr(0, size) + ' ...');
+                itemDesc.text(itemDescText.substr(0, size) + '...');
             }
         });
     });
+
 });
