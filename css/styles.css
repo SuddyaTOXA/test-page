@@ -221,12 +221,14 @@ img {
             top: 0;
         }
             .action-info {
-                font: 11px/30px 'AvenirLTStd-Light', Arial, sans-serif;
+                font: 11px/31px 'AvenirLTStd-Light', Arial, sans-serif;
                 color: #ff8fa7;
+                letter-spacing: 0.6px;
                 text-transform: uppercase;
             }
                 .action-info strong {
                     font-family: 'AvenirLTStd-Heavy', Arial, sans-serif;
+                    letter-spacing: 0.5px;
                     color: #ffffff;
                 }
         .header-call-box {
@@ -235,14 +237,17 @@ img {
         }
             .call-box-desc {
                 display: block;
+                margin-bottom: 2px;
                 font-size: 12px;
                 line-height: 1;
+                letter-spacing: 0.6px;
                 color: #82001c;
                 text-align: right;
                 text-transform: uppercase;
             }
             .header-call-box a {
                 font: 700 18px/1 'Oswald', Arial, sans-serif;
+                letter-spacing: 0.1px;
                 color: #82001c;
             }
             .header-call-box a:hover {
@@ -251,14 +256,17 @@ img {
 
         .header-filter-list {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 14px;
             margin-bottom: -25px;
-            padding-right: 10px;
+            padding-right: 67px;
         }
             .header-filter-list > li {
                 display: inline-block;
                 margin-bottom: 25px;
                 padding: 0 27px;
+            }
+            .header-filter-list > li:last-child {
+                margin-left: -4px;
             }
                 .select-wrap {
                     text-align: left;
@@ -268,6 +276,7 @@ img {
                         padding-left: 18px;
                         font-size: 12px;
                         line-height: 1;
+                        letter-spacing: 0.6px;
                         color: #82001c;
                         text-transform: uppercase;
                     }
@@ -280,6 +289,7 @@ img {
                         .nice-select .current,
                         .search-title {
                             font: 700 18px/1 'Oswald', Arial, sans-serif;
+                            letter-spacing: 0.5px;
                             text-transform: uppercase;
                             color: #82001c;
                         }
@@ -521,7 +531,7 @@ img {
 /*--------------------------------------NAV-----------------------------------------*/
 .main-nav > ul {
     float: right;
-    margin-right: -20px;
+    margin-right: -19px;
     margin-left: 20px;
     text-align: center;
 }
@@ -588,7 +598,7 @@ img {
 .breadcrumbs {
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
 }
 .breadcrumbs a {
     font-family: 'AvenirLTStd-Light', Arial, sans-serif;
@@ -690,12 +700,14 @@ img {
 /*----------------------------------------------------------------------------------*/
 .sidebar {
     float: left;
-    max-width: 160px;
+    max-width: 156px;
     margin-right: 38px;
 }
     .sidebar-title {
+        margin-top: -2px;
         margin-bottom: 24px;
         font: 14px 'AvenirLTStd-Heavy', Arial, sans-serif;
+        letter-spacing: 0.5px;
         text-transform: uppercase;
     }
     .filter-list {
@@ -705,7 +717,7 @@ img {
             position: relative;
             padding-top: 6px;
             padding-right: 30px;
-            padding-bottom: 5px;
+            padding-bottom: 6px;
             border-bottom: 1px solid #d4d4d4;
         }
         .filter-list > li:hover:after,
@@ -736,7 +748,7 @@ img {
         }
             .filter-list > li a {
                 font: 14px 'AvenirLTStd-Light', Arial, sans-serif;
-                letter-spacing: 0.4px;
+                letter-spacing: 0.2px;
                 -webkit-transition: 0s;
                 -khtml-transition: 0s;
                 -moz-transition: 0s;
@@ -747,7 +759,7 @@ img {
             .filter-list > li a:hover,
             .filter-list > li.active a{
                 font-family: 'AvenirLTStd-Heavy', Arial, sans-serif;
-                letter-spacing: 0;
+                letter-spacing: 0.1px;
                 text-decoration: none;
             }
 /*----------------------------------------------------------------------------------*/
