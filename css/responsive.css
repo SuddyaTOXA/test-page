@@ -49,6 +49,8 @@
                 float: none;
                 margin: 0 auto;
                 padding-top: 23px;
+                max-width: 179px;
+                max-height: 59px;
             }
     .navigation-bar,
     .header-call-box,
