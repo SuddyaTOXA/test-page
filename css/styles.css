@@ -81,13 +81,7 @@ button {
 .input-style::-moz-placeholder { color: #4f6370; }
 .input-style:-ms-input-placeholder { color: #4f6370; }
 .input-style:-moz-placeholder { color: #4f6370; }
-img {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-}
+
 .container {
     max-width: 1020px;
     width: 100%;
@@ -677,7 +671,7 @@ img {
                 /*height: 100%;*/
                 opacity: 0;
                 visibility: hidden;
-                transition: opacity 0.2s, visibility 0s linear 0.2s;
+                transition: opacity 0.2s, visibility 0s linear 0.1s;
             }
             .item-box:hover a.btn-view {
                 opacity: 1;
