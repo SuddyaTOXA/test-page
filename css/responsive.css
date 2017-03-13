@@ -18,8 +18,13 @@
 
 }
 
-@media all and (max-width: 1080px) {
-
+@media all and (max-width: 1036px) {
+    .catalog-list > li {
+        width: 25%;
+    }
+    .item-box {
+        width: auto;
+    }
 }
 
 @media all and (max-width: 991px) {
@@ -120,6 +125,7 @@
     .catalog-list > li {
         float: none;
         display: inline-block;
+        width: auto;
     }
     .item-box {
         width: 290px;
@@ -197,6 +203,9 @@
         text-align: left;
         display: block;
         margin: 15px auto -25px;
+    }
+    .header-filter-list > li:last-child {
+        margin-left: 0;
     }
 }
 
