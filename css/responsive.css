@@ -1,0 +1,172 @@
+/*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (min-width: 1920px) {
+
+}
+@media all and (min-width: 1680px) {
+
+}
+
+@media all and (max-width: 1400px) {
+
+}
+
+@media all and (max-width: 1280px) {
+
+}
+
+@media all and (max-width: 1199px) {
+
+}
+
+@media all and (max-width: 1080px) {
+
+}
+
+@media all and (max-width: 1024px) {
+    .desktop {
+        display: none !important;
+    }
+    .header {
+        position: relative;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+        .mobile-header-box {
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100px;
+            -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+        }
+            .mobile-header-box .logo {
+                float: none;
+                margin: 0 auto;
+                padding-top: 23px;
+            }
+    .navigation-bar,
+    .header-call-box,
+    .header-bottom-box .logo,
+    .sidebar {
+        display: none;
+    }
+    .mobile-menu-wrap,
+    .mobile-menu-toggle,
+    .mobile-header-box {
+        display: block;
+    }
+    .breadcrumbs-box {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+    .breadcrumbs {
+        font-size: 18px;
+    }
+    .breadcrumbs a {
+     font-size: 18px;
+        line-height: 1.4;
+    }
+    .catalog-list,
+    .item-box {
+        border-color: transparent;
+    }
+    .item-box {
+        width: 290px;
+        height: 350px;
+    }
+        .item-wrap-img{
+            height: 260px;
+            line-height: 260px;
+        }
+        .item-desc {
+            height: 82px;
+        }
+        .item-title {
+            font: 400 30px 'Oswald', Arial, sans-serif;
+        }
+    .section-title {
+        display: none;
+    }
+    .select-desc {
+        font-size: 18px;
+    }
+    .nice-select .current,
+    .search-title {
+       font-size: 26px;
+    }
+    .nice-select .option {
+        font-size: 26px;
+    }
+}
+
+@media all and (max-width: 991px) {
+
+}
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 860px) {
+
+}
+
+@media all and (max-width: 790px) {
+
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 767px) {
+
+}
+
+@media (max-width: 767px) and (max-height: 480px) {
+
+}
+@media all and (max-width: 736px) {
+
+}
+@media all and (max-width: 680px) {
+
+}
+
+@media all and (max-width: 640px) {
+
+}
+
+@media all and (max-width: 600px) {
+
+}
+
+@media all and (max-width: 560px) {
+
+}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 420px) {
+
+}
+
+@media all and (max-width: 380px) {
+
+}
+
+@media all and (max-width: 360px) {
+
+}
+
+@media all and (max-width: 350px) {
+
+}
