@@ -38,6 +38,38 @@ a:hover                        { text-decoration: underline; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
 
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FONTS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'AvenirLTStd';
+    src: url('../fonts/avenirltstd-heavy.eot');
+    src: url('../fonts/avenirltstd-heavy.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenirltstd-heavy.woff') format('woff'),
+         url('../fonts/avenirltstd-heavy.ttf') format('truetype'),
+         url('../fonts/avenirltstd-heavy.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirLTStd';
+    src: url('../fonts/avenirltstd-light.eot');
+    src: url('../fonts/avenirltstd-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenirltstd-light.woff') format('woff'),
+         url('../fonts/avenirltstd-light.ttf') format('truetype'),
+         url('../fonts/avenirltstd-light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -89,43 +121,6 @@ button {
     padding: 0 20px;
 }
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------FONTS----------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-@font-face {
-    font-family: 'AvenirLTStd';
-    src: url('../fonts/avenirltstd-heavy.eot');
-    src: url('../fonts/avenirltstd-heavy.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/avenirltstd-heavy.woff') format('woff'),
-         url('../fonts/avenirltstd-heavy.ttf') format('truetype'),
-         url('../fonts/avenirltstd-heavy.svg') format('svg');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'AvenirLTStd';
-    src: url('../fonts/avenirltstd-light.eot');
-    src: url('../fonts/avenirltstd-light.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/avenirltstd-light.woff') format('woff'),
-         url('../fonts/avenirltstd-light.ttf') format('truetype'),
-         url('../fonts/avenirltstd-light.svg') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------WRAPPER--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-.wrapper {
-    position: relative;
-    min-height: 100%;
-    margin-bottom: -225px;
-}
-.wrapper:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 225px;
-}
-/*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .header {
@@ -163,13 +158,13 @@ button {
         height: 0;
     }
     .navigation-bar > .container:before {
-        border-bottom: 32px solid #fff;
+        border-bottom: 30px solid #fff;
         border-left: 0 solid transparent;
         border-right: 30px solid transparent;
         left: -2120px;
     }
     .navigation-bar > .container:after {
-        border-bottom: 32px solid #fff;
+        border-bottom: 30px solid #fff;
         border-left: 30px solid transparent;
         border-right: 0 solid transparent;
         right: -2120px;
@@ -409,7 +404,7 @@ button {
                     z-index: 1;
                     color: #82001c;
                     cursor: pointer;
-                    background-color: rgba(255, 255, 255, 1);
+                    background-color: transparent;
                     border: transparent;
                 }
                 .search-box .icon:hover {
@@ -559,6 +554,7 @@ button {
     margin-right: -19px;
     margin-left: 20px;
     text-align: center;
+    min-height: 30px;
 }
     .main-nav > ul > li {
         display: inline-block;
@@ -571,6 +567,7 @@ button {
         .main-nav > ul > li a {
             position: relative;
             display: inline-block;
+            max-height: 30px;
             padding: 9px 18px 8px;
             font-size: 11px;
             letter-spacing: 0.5px;
@@ -799,3 +796,8 @@ button {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
+/*--------------------------------------OTHER---------------------------------------*/
+.wrapper ~ .cbalink {
+    display: none;
+}
