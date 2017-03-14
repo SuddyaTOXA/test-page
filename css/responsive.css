@@ -1,5 +1,5 @@
 /*--------------------------------------MEDIA-----------------------------------------*/
-@media all and (max-width: 1320px) {
+@media all and (max-width: 1376px) {
     .navigation-bar > .container {
         position: static;
     }
@@ -253,6 +253,9 @@
 }
 
 @media all and (max-width: 480px) {
+    .header-bottom-box {
+        padding: 10px 0 32px;
+    }
     .header-filter-list {
         text-align: left;
         display: block;
