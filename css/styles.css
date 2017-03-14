@@ -87,15 +87,15 @@ a.btn, .btn {
     max-width: 100%;
     min-width: 117px;
     margin: 0;
-    padding: 10px 16px 8px;
-    font: 400 18px/1 'Oswald', Arial, sans-serif;
+    padding: 8px 16px 9px;
+    font: 500 19px/1 'Oswald', Arial, sans-serif;
     color: #82001c;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
     border: 2px solid #82001c;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 a.btn:hover, .btn:hover {
     color: #ffffff;
@@ -161,16 +161,16 @@ button {
         border-bottom: 30px solid #fff;
         border-left: 0 solid transparent;
         border-right: 30px solid transparent;
-        left: -2120px;
+        left: -2148px;
     }
     .navigation-bar > .container:after {
         border-bottom: 30px solid #fff;
         border-left: 30px solid transparent;
         border-right: 0 solid transparent;
-        right: -2120px;
+        right: -2148px;
     }
     .header-bottom-box {
-        padding: 13px 0 10px;
+        padding: 13px 0 11px;
         text-align: center;
     }
         .logo {
@@ -249,7 +249,7 @@ button {
             }
             .header-call-box a {
                 font: 700 18px/1 'Oswald', Arial, sans-serif;
-                letter-spacing: 0.1px;
+                letter-spacing: 0.2px;
                 color: #82001c;
             }
             .header-call-box a:hover {
@@ -346,7 +346,7 @@ button {
                                 padding-right: 30px;
                                 cursor: pointer;
                                 display: inline-block;
-                                margin-top: 3px;
+                                margin-top: 7px;
                             }
                             .search-title:after {
                                 position: absolute;
@@ -609,7 +609,7 @@ button {
 
 /*-------------------------------------BREADCRUMBS---------------------------------*/
 .breadcrumbs-box {
-    padding-top: 12px;
+    padding-top: 10px;
     padding-bottom: 7px;
     background-color: #ffdd00;
 }
@@ -647,29 +647,30 @@ button {
 
 /*-------------------------------------CATALOG--------------------------------------*/
 .section {
-    padding: 52px 0 60px;
+    padding: 53px 0 60px;
 }
 .section-catalog {}
     .section-title {
-        margin-bottom: 19px;
-        font: 400 51px 'Oswald', Arial, sans-serif;
+        margin-bottom: 27px;
+        font: 500 52px/1.2 'Oswald', Arial, sans-serif;
+        letter-spacing: 1.4px;
     }
     .container-box {
         overflow: hidden;
     }
         .catalog-list {
             overflow: hidden;
-            margin-right: 5px;
             font-size: 0;
             border-top: 1px solid #d4d4d4;
             border-left: 1px solid #d4d4d4;
         }
             .catalog-list > li {
                 float: left;
+                width: 25%;
             }
             .item-box {
                 position: relative;
-                width: 195px;
+                width: 100%;
                 height: 190px;
                 border-right: 1px solid #d4d4d4;
                 border-bottom: 1px solid #d4d4d4;
@@ -678,11 +679,6 @@ button {
                 color: #464646;
             }
             .item-box a.btn-view {
-                /*position: absolute;*/
-                /*left: 0;*/
-                /*top: 0;*/
-                /*width: 100%;*/
-                /*height: 100%;*/
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 0.2s, visibility 0s linear 0.1s;
@@ -703,10 +699,13 @@ button {
                     transform: translate(-50%, -50%);
                 }
                 .item-wrap-img {
+                    display: inline-block;
+                    width: 100%;
                     height: 145px;
-                    padding: 5px;
+                    padding: 2px 2px 0;
+                    vertical-align: bottom;
                     text-align: center;
-                    line-height: 145px;
+                    line-height: 150px;
                 }
                     .item-wrap-img img {
                         max-width: 100%;
@@ -718,7 +717,7 @@ button {
                 .item-desc {
                     overflow: hidden;
                     height: 44px;
-                    padding: 0 20px 8px;
+                    padding: 4px 20px;
                     line-height: 44px;
                     text-align: left;
                     vertical-align: middle;
@@ -759,7 +758,8 @@ button {
             border-right: 1px solid #464646;
             content: '';
             display: block;
-            height: 8px;
+            height: 7px;
+            width: 7px;
             margin-top: -6px;
             pointer-events: none;
             position: absolute;
@@ -773,7 +773,6 @@ button {
             transform: rotate(-45deg);
             -webkit-transition: all 0.15s ease-in-out;
             transition: all 0.15s ease-in-out;
-            width: 8px;
         }
 
         .filter-list > li:last-child {

@@ -33,15 +33,6 @@
     }
 }
 
-@media all and (max-width: 1036px) {
-    .catalog-list > li {
-        width: 25%;
-    }
-    .item-box {
-        width: 100%;
-    }
-}
-
 @media all and (max-width: 991px) {
     .desktop {
         display: none !important;
