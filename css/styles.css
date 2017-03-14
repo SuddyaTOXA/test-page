@@ -658,18 +658,21 @@ button {
         overflow: hidden;
     }
         .catalog-list {
-            margin-right: 4px;
+            overflow: hidden;
+            margin-right: 5px;
             font-size: 0;
-            border: 1px solid #d4d4d4
+            border-top: 1px solid #d4d4d4;
+            border-left: 1px solid #d4d4d4;
         }
             .catalog-list > li {
-                display: inline-block;
+                float: left;
             }
             .item-box {
                 position: relative;
                 width: 195px;
                 height: 190px;
-                border: 1px solid #d4d4d4;
+                border-right: 1px solid #d4d4d4;
+                border-bottom: 1px solid #d4d4d4;
             }
             .item-box a {
                 color: #464646;
