@@ -263,6 +263,7 @@ button {
                 width: 156px;
                 margin-bottom: 25px;
                 padding: 0 7px;
+                vertical-align: middle;
             }
             .header-filter-list > li:last-child {
                 padding-left: 33px;
