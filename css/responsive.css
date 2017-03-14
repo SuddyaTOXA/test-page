@@ -171,6 +171,9 @@
     .search-title {
        font-size: 26px;
     }
+    .search-title {
+        margin-top: 16px;
+    }
     .nice-select .option {
         font-size: 26px;
     }
