@@ -252,6 +252,7 @@
         margin-left: 0;
         width: 32.33%;
         padding: 0 0 0 15px;
+        margin-bottom: 20px;
     }
     .select-desc {
         font-size: 10px;
@@ -307,6 +308,9 @@
     .breadcrumbs a {
         font-size: 9px;
         letter-spacing: normal;
+    }
+    .breadcrumbs {
+        margin-bottom: -3px;
     }
     .section-catalog {
         padding-top: 5px;
