@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/nice-select/nice-select.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.min.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -49,6 +49,7 @@
                     <div class="logo">
                         <a href="index.html">
                             <img src="img/logo_mob.png" alt="Site Name">
+                            Site Name
                         </a>
                     </div>
 
@@ -72,19 +73,20 @@
                     <div class="logo">
                         <a href="index.html">
                             <img src="img/logo.png" alt="Site Name">
+                            Site Name
                         </a>
                     </div>
 
                     <div class="header-call-box">
                         <span class="call-box-desc">Give us a call</span>
-                        <a href="tel:+18005551212" class="">(800) 555-1212</a>
+                        <a href="tel:+18005551212">(800) 555-1212</a>
                     </div>
 
                     <ul class="header-filter-list">
                         <li>
                             <div class="select-wrap">
                                 <span class="select-desc">Find by</span>
-                                <select name="brand">
+                                <select name="brand" title="Find by Brand">
                                     <option data-display="Brand">Nothing</option>
                                     <option value="1">Brand 1</option>
                                     <option value="2">Brand 2 Brand 2</option>
@@ -96,7 +98,7 @@
                         <li>
                             <div class="select-wrap">
                                 <span class="select-desc">Find by</span>
-                                <select name="type">
+                                <select name="type" title="Find by Part type">
                                     <option data-display="Part type">Nothing</option>
                                     <option value="1">Part type 1</option>
                                     <option value="2">Part typPart type 2</option>
@@ -117,8 +119,8 @@
                 <div class="container">
                     <div class="search-box">
                         <form action="#" method="get">
-                            <button type="submit" class="icon"><i class="fa fa-search"></i></button>
-                            <input type="text" name="s" autocomplete="on" class="input-style search-style" value="">
+                            <button type="submit" class="icon" title="Search submit"><i class="fa fa-search"></i></button>
+                            <input type="text" name="s" autocomplete="on" tabindex="1" class="input-style search-style" title="Search text" value="">
                         </form>
                     </div>
                 </div>
@@ -143,9 +145,9 @@
 
         <section class="section section-catalog">
             <div class="container">
-                <h2 class="section-title">Spare Parts</h2>
+                <h1 class="section-title">Spare Parts</h1>
                 <aside class="sidebar">
-                    <h3 class="sidebar-title">Filter parts</h3>
+                    <h2 class="sidebar-title">Filter parts</h2>
                     <ul class="filter-list">
                         <li><a href="#">Option With Wrapping Line</a></li>
                         <li class="active"><a href="#">Active/Hover</a></li>
@@ -160,184 +162,160 @@
                 <div class="container-box">
                     <ul class="catalog-list">
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_1.png" alt="Product 1">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_2.png" alt="Product 2">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_3.png" alt="Product 3">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_4.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_4.png" alt="Product 4">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_5.png" alt="Product 5">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_6.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_6.png" alt="Product 6">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Long Product Name With Wrapping Line</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_7.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_7.png" alt="Product 7">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_8.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_8.png" alt="Product 8">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Long Product Name With Wrapping Line</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_9.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_9.png" alt="Product 9">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_10.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_10.png" alt="Product 10">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_11.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_11.png" alt="Product 11">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Product Name</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="item-box">
-                                <div class="item-wrap-img">
-                                    <a href="#">
-                                        <img src="img/item/item_12.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-desc">
-                                    <a href="#">
+                            <a href="#">
+                                <div class="item-box">
+                                    <div class="item-wrap-img">
+                                        <img src="img/item/item_12.png" alt="Product 12">
+                                    </div>
+                                    <div class="item-desc">
                                         <h3 class="item-title">Long Product Name With Wrapping Line</h3>
-                                    </a>
+                                    </div>
+                                    <button class="btn btn-view">View</button>
                                 </div>
-                                <a href="#" class="btn btn-view">View</a>
-                            </div>
+                            </a>
                         </li>
                     </ul>
                 </div>

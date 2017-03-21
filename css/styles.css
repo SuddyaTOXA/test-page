@@ -97,10 +97,6 @@ a.btn, .btn {
     border: 2px solid #82001c;
     background-color: rgba(255, 255, 255, 0.9);
 }
-a.btn:hover, .btn:hover {
-    color: #ffffff;
-    background-color: #82001c;
-}
 
 input[type=button],
 input[type=submit],
@@ -124,21 +120,6 @@ button {
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .header {
-    /*position: fixed;*/
-    /*z-index: 1000;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
-    /*min-height: 100px;*/
-    /*background-color: #fff;*/
-    /*-webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);*/
-    /*-moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);*/
-    /*-o-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);*/
-    /*box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);*/
-    /*-webkit-transition: all 0.5s ease;*/
-    /*-moz-transition: all 0.5s ease;*/
-    /*-o-transition: all 0.5s ease;*/
-    /*transition: all 0.5s ease;*/
     border-bottom: 1px solid #c2c2c2;
 }
     .navigation-bar {
@@ -317,6 +298,11 @@ button {
                                 border-right: 7px solid transparent;
                                 border-top: 13px solid #82001c;
                                 border-bottom: none;
+                                -webkit-transform-origin: center;
+                                -moz-transform-origin: center;
+                                -o-transform-origin: center;
+                                -ms-transform-origin: center;
+                                transform-origin: center;
                                 -moz-transform: rotate(0deg);
                                 -ms-transform: rotate(0deg);
                                 -webkit-transform: rotate(0deg);
@@ -324,7 +310,7 @@ button {
                                 transform: rotate(0deg);
                             }
                             .nice-select.open:after {
-                                margin-top: -15px;
+                                margin-top: -12px;
                                 -moz-transform: rotate(180deg);
                                 -ms-transform: rotate(180deg);
                                 -webkit-transform: rotate(180deg);
@@ -438,7 +424,7 @@ button {
     right: 0;
     height: 0;
     width: 0;
-    top: 100px;
+    top: 98px;
     -webkit-transition-delay: 0.35s;
     -moz-transition-delay: 0.35s;
     -o-transition-delay: 0.35s;
@@ -674,15 +660,12 @@ button {
                 border-right: 1px solid #d4d4d4;
                 border-bottom: 1px solid #d4d4d4;
             }
-            .item-box a:not(.btn) {
-                color: #464646;
-            }
-            .item-box a.btn-view {
+            .item-box .btn-view {
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 0.2s, visibility 0s linear 0.1s;
             }
-            .item-box:hover a.btn-view {
+            .item-box:hover .btn-view {
                 opacity: 1;
                 visibility: visible;
                 transition-delay: 0.2s;
@@ -704,7 +687,7 @@ button {
                     padding: 2px 2px 0;
                     vertical-align: bottom;
                     text-align: center;
-                    line-height: 150px;
+                    line-height: 142px;
                 }
                     .item-wrap-img img {
                         max-width: 100%;
@@ -717,7 +700,7 @@ button {
                     overflow: hidden;
                     height: 44px;
                     padding: 4px 20px;
-                    line-height: 44px;
+                    line-height: 37px;
                     text-align: left;
                     vertical-align: middle;
                 }
@@ -725,6 +708,7 @@ button {
                         display: inline-block;
                         font: 700 13px/1.3 'AvenirLTStd', Arial, sans-serif;
                         letter-spacing: 0.2px;
+                        color: #464646;
                     }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
