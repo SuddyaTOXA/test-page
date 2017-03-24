@@ -290,11 +290,14 @@ a.btn, .btn {
                                 border-right: 7px solid transparent;
                                 border-top: 13px solid #82001c;
                                 border-bottom: none;
+                                -webkit-transform-origin: center;
                                 transform-origin: center;
+                                -webkit-transform: rotate(0deg);
                                 transform: rotate(0deg);
                             }
                             .nice-select.open:after {
                                 margin-top: -12px;
+                                -webkit-transform: rotate(180deg);
                                 transform: rotate(180deg);
                             }
                             .nice-select .list {
@@ -459,6 +462,7 @@ a.btn, .btn {
     z-index: 999999;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .mobile-menu-toggle span:before {
@@ -471,10 +475,12 @@ a.btn, .btn {
     background-color: transparent;
 }
 .mobile-menu-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: 0;
 }
 .mobile-menu-toggle.active span:after {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     bottom: 0;
 }
@@ -613,6 +619,7 @@ a.btn, .btn {
                     position: absolute;
                     left: 50%;
                     top: 50%;
+                    -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
                 }
                 .item-wrap-img {
@@ -683,7 +690,9 @@ a.btn, .btn {
             position: absolute;
             right: 0;
             top: 50%;
+            -webkit-transform-origin: 66% 66%;
             transform-origin: 66% 66%;
+            -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
             transition: all 0.15s ease-in-out;
         }

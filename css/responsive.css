@@ -82,9 +82,16 @@
         width: 32.5%;
         max-width: 156px;
     }
+    .header-call-box a {
+        font-size: 17px;
+    }
 }
 
 @media all and (max-width: 767px) {
+    div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea,:focus {
+        outline: none;
+    }
+
     .desktop {
         display: none !important;
     }

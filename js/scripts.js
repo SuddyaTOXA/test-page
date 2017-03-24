@@ -59,4 +59,8 @@ jQuery(document).ready(function($) {
         });
     });
 
+    setTimeout(function () {
+        $('.nice-select').removeAttr('tabindex');
+    }, 1000)
+
 });
