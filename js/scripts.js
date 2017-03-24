@@ -1,21 +1,5 @@
 jQuery(document).ready(function($) {
 
-    // for header-fixed padding
-    // $(window).on('load resize', function() {
-    //     var mobHeader = $('.mobile-header-box'),
-    //         width = $(window).width();
-    //     if (width > '991') {
-    //         setTimeout(function() {
-    //             $(document.body).children('.wrapper').css('padding-top', 0);
-    //         }, 10);
-    //     } else if (width < '992'){
-    //         setTimeout(function() {
-    //             var headerHeight = mobHeader.outerHeight();
-    //             $(document.body).children('.wrapper').css('padding-top', headerHeight);
-    //         }, 10);
-    //     }
-    // });
-
 	// for smooth scroll
     smoothScroll.init({
         selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
@@ -35,7 +19,7 @@ jQuery(document).ready(function($) {
     $('select').niceSelect();
 
     //for search box
-    $('.search-title').on('click', function () {
+    $('.search-title').on('click touch keypress', function () {
         var input =  $('.search-box').find('input[name=s]');
 
         if (($(this).hasClass('open'))) {
